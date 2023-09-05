@@ -1,0 +1,129 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  display: flex;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0d5691;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a,
+.nav-links button {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links button:hover {
+  color: #e0e0e0;
+}
+
+.nav-links button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #2196f3;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links button:hover {
+  background-color: #e0e0e0;
+  color: #2196f3;
+}
+.nav-links .active {
+  background-color: #0e2c4c;
+  color: #ffffff;
+}
+
+/* Light Theme */
+body.light {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Dark Theme */
+body.dark {
+  background-color: #222;
+  color: #fff;
+}
+
+/* Header Style */
+.mat-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-links button {
+  margin-right: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Theme Switcher Icon */
+.theme-icon {
+  font-size: 24px;
+}
+
+.dark-theme {
+  display: block;/* Add your dark theme styles here */
+}
+
+
+

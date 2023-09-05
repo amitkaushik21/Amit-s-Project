@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  <span>
+    <a routerLink="/" class="logo">MyMessages</a>
+  </span>
+  <span class="spacer"></span>
+  <div class="nav-links">
+    <a mat-button routerLink="/create" [ngClass]="{ 'active': isLinkActive('/create') }" *ngIf="userIsAuthenticated">New Post</a>
+    <a mat-button routerLink="/login" [ngClass]="{ 'active': isLinkActive('/login') }" *ngIf="!userIsAuthenticated">Login</a>
+    <a mat-button routerLink="/signup" [ngClass]="{ 'active': isLinkActive('/signup') }" *ngIf="!userIsAuthenticated">Sign Up</a>
+    <button mat-button (click)="onLogout()" *ngIf="userIsAuthenticated">Logout</button>
+  </div>
+</mat-toolbar>
+
